@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Scrambler</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+  
+<body>
+    <div class="container">
+      
+        <h1 style="text-align: center;"">Redact your text here </h1>
+      
+        <form id="replace-form">
+          <label for="text">Enter your text:</label><br>
+          
+          <textarea id="text" name="text" rows="3"></textarea><br><br />
+          
+          <label for="keywords">Keywords to replace (separate your words by spaces):</label>
+          <br><br>
+          
+          <input type="text" id="keywords" name="keywords"
+            rows="3">
+          
+          <br><br>
+          
+          <label for="replacement-char"> Select your preferred replacement character:</label>
+          <br><br>
+          
+          <select id="replacement-char" name="replacement-char"> 
+     <!-- users pick the option they would replec the text with -->       
+        <option value="***" selected> Asteriks </option>
+            
+        <option value="_" > Underscores </option>
+            
+          </select>
+          <br><br>
+          
+          <button type="submit" id="submit-button">Submit</button>
+          <button type="button" id="reset-button"> Reset </button>
+        </form>
+      
+        <div id="output">
+            <!-- The output will be displayed here -->
+        <br>
+        <h1 style="color:darkblue;"> REDACTED TEXT </h1>
+          
+        <p id="output-text"></p>
+          </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
