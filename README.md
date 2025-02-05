@@ -1,5 +1,5 @@
 ## Redacter App
-This is a website where you can replace words with any letters or symbols. View the deployed link here: 
+This is a website where you can replace words with any letters or symbols. View the deployed link here: https://amiele2006.github.io/Radacter_app/
 
 ## Installation 
 Instructions for installing the redacter app and getting it set up locally:
