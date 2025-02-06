@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Scrambler</title>
-    <link rel="stylesheet" href="style.css">
-  
-</head>
-  
-<body>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <div class="container">
-      
-        <h1 style="text-align: center;"">Redact your text here </h1>
-      
-        <form id="replace-form">
-          <label for="text">Enter your text:</label><br>
-          
-          <textarea id="text" name="text" rows="3"></textarea><br><br />
-          
-          <label for="keywords">Keywords to replace (separate your words by spaces):</label>
-          <br><br>
-          
-          <input type="text" id="keywords" name="keywords"
-            rows="3">
-          
-          <br><br>
-          
-          <label for="replacement-char"> Select your preferred replacement character:</label>
-          <br><br>
-          
-          <select id="replacement-char" name="replacement-char"> 
-     <!-- users pick the option they would replec the text with -->       
-        <option value="***" selected> Asteriks </option>
-            
-        <option value="_" > Underscores </option>
-            
-          </select>
-          <br><br>
-          
-          <button type="submit" id="submit-button">Submit</button>
-          <button type="button" id="reset-button"> Reset </button>
-        </form>
-      
-        <div id="output">
-            <!-- The output will be displayed here -->
-        <br>
-        <h1 style="color:darkblue;"> REDACTED TEXT </h1>
-          
+      <h1 class="text-center text-4xl mb-6">Redact your text</h1>
+
+      <div class="flex md:flex-col">
+       <form id="replace-form">
+        <h2 class="pb-4">Enter your text:</h2>
+
+        <textarea name="text" rows="3" class="keywords-area"> </textarea>
+
+        <h2 class="keywords">Keywords to replace:</h2>
+        <p class="keywords-p text-xs text-gray-500"><i>NB: separate your words by spaces</i></p>
+
+        <textarea class="keywords-area pb-12" name="keywords" rows="3">
+        </textarea>
+
+        <br/>
+        <h2 for="replacement-char">
+          Select your preferred replacement character:
+        </h2>
+        <br />
+
+        <select id="replacement-char" name="replacement-char" class="shadow-xl p-2 rounded-lg">
+          <!-- users pick the option they would replace the text with -->
+          <option value="*" selected class="p-2">Asteriks</option>
+          <option value="_" class="p-2">Underscores</option>
+        </select>
+        <br /><br />
+
+        <button type="submit" id="submit-button">Submit</button>
+        <button type="button" id="reset-button">Reset</button>
+      </form>
+
+      <div id="output">
+        <!-- The output will be displayed here -->
+        <br />
+        <h1 style="color: darkblue">REDACTED TEXT</h1>
+
         <p id="output-text"></p>
-          </div>
+      </div>
+
+    </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
