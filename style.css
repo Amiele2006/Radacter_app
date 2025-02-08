@@ -18,13 +18,13 @@ body {
 }
 
 textarea {
-    width: 300px;
+    min-width: 100px;
+    max-width:500px;
     margin-bottom: 10px;
     border-radius: 8px;
 }
 
-.keywords-area{
-  width:300px;
+.keywords-area{ 
   border-radius:7px;
   border:0.01px solid;
   height:50px;
@@ -40,7 +40,7 @@ textarea {
 }
 
 #keywords::active{
-  border:0.01px solid black;
+    border:0.01px solid black;
 }
 
 .keywords-p {
@@ -57,14 +57,11 @@ textarea {
     cursor: pointer;
     border-radius:11px;
     text-align: center;
-    position: relative;
-    top:13px;
-    left:75px;
     font-size:15px;
 }
 
 #reset-button{
-  padding: 6px;
+    padding: 6px;
     width:180px;
     height:27px;
     background-color:#fff ;
@@ -73,17 +70,17 @@ textarea {
     cursor: pointer;
     border-radius:11px;
     text-align: center;
-    position: relative;
-    top:19px;
-    left:75px;
     font-size:15px;
-  
 }
 
-replacement-char{
+#replacement-char{
   border-radius:7px;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+#output {
+    max-width: 800px;
 }

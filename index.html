@@ -18,39 +18,37 @@
     <div class="container">
       <h1 class="text-center text-4xl mb-6">Redact your text</h1>
 
-      <div class="flex md:flex-col">
+      <div class="flex flex-col md:flex-row md:gap-8">
        <form id="replace-form">
         <h2 class="pb-4">Enter your text:</h2>
 
-        <textarea name="text" rows="3" class="keywords-area"> </textarea>
+        <textarea name="text" rows="3" id="text" class="keywords-area md:flex-grow"> </textarea>
 
         <h2 class="keywords">Keywords to replace:</h2>
         <p class="keywords-p text-xs text-gray-500"><i>NB: separate your words by spaces</i></p>
 
-        <textarea class="keywords-area pb-12" name="keywords" rows="3">
+        <textarea class="keywords-area mb-8 md:flex-grow" id="keywords" name="keywords" rows="3">
         </textarea>
 
-        <br/>
-        <h2 for="replacement-char">
+        <h2 for="replacement-char" class="mb-4">
           Select your preferred replacement character:
         </h2>
-        <br />
 
-        <select id="replacement-char" name="replacement-char" class="shadow-xl p-2 rounded-lg">
+        <select id="replacement-char" name="replacement-char" class="shadow-xl p-2 mb-6 rounded-lg">
           <!-- users pick the option they would replace the text with -->
           <option value="*" selected class="p-2">Asteriks</option>
           <option value="_" class="p-2">Underscores</option>
         </select>
-        <br /><br />
 
-        <button type="submit" id="submit-button">Submit</button>
-        <button type="button" id="reset-button">Reset</button>
+        <div class="flex justify-center items-center flex-row">
+          <button type="submit" id="submit-button" >Submit</button>
+          <button type="button" id="reset-button">Reset</button>
+        </div>
       </form>
 
-      <div id="output">
+      <div id="output" class="pt-5 max-w-full max-h-full">
         <!-- The output will be displayed here -->
-        <br />
-        <h1 style="color: darkblue">REDACTED TEXT</h1>
+        <h1 class="text-blue-700">REDACTED TEXT</h1>
 
         <p id="output-text"></p>
       </div>
