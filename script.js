@@ -7,12 +7,11 @@ document.getElementById('replace-form').addEventListener('submit', function(even
   document.getElementById('output-text').innerText = output;
 });
 
-function replaceKeywords(text, keywords, replacementOptions) {
+function replaceKeywords(text, keywords, replacementChar) {
   var words = text.split(' ');
   for (var i = 0; i < words.length; i++) {
     if (keywords.includes(words[i])) {
-      var randomIndex = Math.floor(Math.random() * replacementOptions.length);
-      words[i] = replacementOptions[randomIndex].trim();
+      words[i] = replacementChar.repeat(words[i].length);
     }
   }
   return words.join(' ');

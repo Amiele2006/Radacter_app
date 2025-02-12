@@ -48,37 +48,21 @@ textarea {
 }
 
 #submit-button{
-    padding: 6px;
-    width:180px;
-    height:27px;
-    background-color: #007bff;
-    color: #fff;
+    height:35px;
     border: none;
     cursor: pointer;
-    border-radius:11px;
-    text-align: center;
-    font-size:15px;
+    font-size:18px;
 }
 
 #reset-button{
-    padding: 6px;
-    width:180px;
-    height:27px;
-    background-color:#fff ;
-    color: #007bff;
+    height:35px;
     border: none;
     cursor: pointer;
-    border-radius:11px;
-    text-align: center;
-    font-size:15px;
+    font-size:18px;
 }
 
 #replacement-char{
   border-radius:7px;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
 
 #output {

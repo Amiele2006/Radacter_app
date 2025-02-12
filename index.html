@@ -38,17 +38,19 @@
           <!-- users pick the option they would replace the text with -->
           <option value="*" selected class="p-2">Asteriks</option>
           <option value="_" class="p-2">Underscores</option>
+          <option value="$" class="p-2"> Dollar Signs</option>
+          <option value="#">Hash signs</option>
         </select>
 
-        <div class="flex justify-center items-center flex-row">
-          <button type="submit" id="submit-button" >Submit</button>
-          <button type="button" id="reset-button">Reset</button>
+        <div class="flex items-center flex-row">
+          <button type="submit" id="submit-button" class="text-slate-800 bg-slate-300 flex items-center m-4 p-4 rounded-xl text-center hover:text-neutral-900">Submit</button>
+          <button type="button" id="reset-button" class="bg-slate-800 text-slate-300 flex items-center m-4 p-4 rounded-xl hover:text-white">Reset</button>
         </div>
       </form>
 
-      <div id="output" class="pt-5 max-w-full max-h-full">
+      <div id="output" class="pt-5 ml-20 max-h-full">
         <!-- The output will be displayed here -->
-        <h1 class="text-blue-700">REDACTED TEXT</h1>
+        <h1 class="text-slate-800 font-bold">REDACTED TEXT</h1>
 
         <p id="output-text"></p>
       </div>
