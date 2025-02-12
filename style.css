@@ -22,6 +22,7 @@ textarea {
     max-width:500px;
     margin-bottom: 10px;
     border-radius: 8px;
+    line-height:16px;
 }
 
 .keywords-area{ 
