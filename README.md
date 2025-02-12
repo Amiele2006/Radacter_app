@@ -14,5 +14,5 @@ npm start
 
 # More Details
 - Features: replace words with words or symbols
-- Technologies: Node JS, HTML and CSS
+- Technologies: JS, HTML and CSS
 
